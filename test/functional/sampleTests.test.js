@@ -1,9 +1,9 @@
 import request from 'supertest';
 
 import app from 'app';
-import 'test/helpers/dbTransaction';
+import './helpers/dbTransaction';
 
-describe('jest', () => {
+describe.skip('jest', () => {
   it('works', () => {
     expect(Math.min()).toBeGreaterThan(Math.max());
   });

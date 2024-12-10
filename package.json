@@ -8,7 +8,7 @@
     "debug": "NODE_PATH=. nodemon --trace-warnings --inspect=0.0.0.0 bin/www",
     "db:migrate": "knex migrate:latest",
     "db:seed": "knex seed:run",
-    "test": "TZ=UTC jest --silent --detectOpenHandles --testPathPattern app/",
+    "test:unit": "TZ=UTC jest --silent --detectOpenHandles --testPathPattern test/unit/",
     "test:functional": "jest --detectOpenHandles --forceExit test/functional/*"
   },
   "engines": {
@@ -29,7 +29,9 @@
     "lodash": "~4.17.21",
     "nconf": "~0.10.0",
     "objection": "^2.2.15",
-    "pg": "~8.6.0"
+    "pg": "~8.6.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "debug": "~4.3.1",
